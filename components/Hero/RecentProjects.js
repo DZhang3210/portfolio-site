@@ -33,6 +33,7 @@ const RecentProjects = () => {
                         <a
                             className='flex gap-1 p-1 bg-[#2C3E50] transition hover:text-blue-400 rounded-lg'
                             href = {link}
+                            target="_blank"
                         >
                             <Link/>
                             Link
@@ -40,6 +41,7 @@ const RecentProjects = () => {
                         <a
                             className='flex gap-2 p-1 bg-[#333333] transition hover:text-blue-400 rounded-lg'
                             href = {github}
+                            target="_blank"
                         >
                             <Github/>
                             Github
