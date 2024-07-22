@@ -5,10 +5,10 @@ import React from 'react'
 const RecentProjects = () => {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-4'>
-        {[["/pathfinder_demo.gif","Pathfinding Visualizer", "App to Demonstrate Live Pathfinding Algorithms", "Link", "Github"],
-        ["/BugBuddy-gif.gif","Bug Buddy", "Live Bug Tracking and Documentation App", "Link", "Github"],
-        ["/Upwork-gif.gif", "OfficeVibe", "Mobile-responsive front-end interface replicating the OfficeVibe platform", "Link", "Github"],
-        ["/Unsplash-gif.gif", "Unsplash", "Mobile-responsive front-end interface replicating the Unsplash platform", "Link", "Github"]
+        {[["/pathfinder_demo.gif","Pathfinding Visualizer", "App to Demonstrate Live Pathfinding Algorithms", "http://pathvis.s3-website-us-east-1.amazonaws.com", "https://github.com/DZhang3210/Pathfinder"],
+        ["/BugBuddy-gif.gif","Bug Buddy", "Live Bug Tracking and Documentation App", "https://bug-frontend-hnc8.onrender.com", "https://github.com/DZhang3210/Bug-Buddy"],
+        ["/Upwork-gif.gif", "OfficeVibe", "Mobile-responsive front-end interface replicating the OfficeVibe platform", "https://workvibe.netlify.app/", "https://github.com/DZhang3210/work-vibe"],
+        ["/Unsplash-gif.gif", "Unsplash", "Mobile-responsive front-end interface replicating the Unsplash platform", "https://unsplash-replica1.netlify.app/", "https://github.com/DZhang3210/unsplash"]
         ].map(([preview, title, desc, link, github],i)=>(
             <div 
                 className='flex flex-col border rounded-2xl p-5 border-secondary gap-4 transition hover:-translate-y-1 cursor-pointer'
