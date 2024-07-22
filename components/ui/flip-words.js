@@ -1,19 +1,15 @@
 "use client";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
-import { cn } from "../../lib/utils";
+import { cn } from "@/lib/utils.js";
 
 export const FlipWords = ({
   words,
   duration = 3000,
   className,
-}: {
-  words: string[];
-  duration?: number;
-  className?: string;
 }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
-  const [isAnimating, setIsAnimating] = useState<boolean>(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   // thanks for the fix Julian - https://github.com/Julian-AT
   const startAnimation = useCallback(() => {
@@ -51,9 +47,6 @@ export const FlipWords = ({
         }}
         exit={{
           opacity: 0,
-          y: -40,
-          x: 40,
-          filter: "blur(8px)",
           scale: 2,
           position: "absolute",
         }}
@@ -66,13 +59,13 @@ export const FlipWords = ({
         {currentWord.split("").map((letter, index) => (
           <motion.span
             key={currentWord + index}
-            initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: index * 0.08,
+              delay: index * 0.1,
               duration: 0.4,
             }}
-            className="inline-block"
+            className="inline-block text-black"
           >
             {letter}
           </motion.span>

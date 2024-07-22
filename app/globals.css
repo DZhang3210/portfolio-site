@@ -6,5 +6,5 @@ body{
     @apply bg-gray-100 text-primary
 }
 hr{
-    @apply bg-primary w-full h-[2px]
+    @apply bg-primary w-full h-[3px]
 }

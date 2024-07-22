@@ -11,7 +11,7 @@ const Profile = () => {
       </div> 
       <hr className='h-[3px] w-full bg-primary'/>
       <div className='grid grid-cols-1 lg:grid-cols-2 justify-center gap-8'>
-        <div className='flex flex-col items-ceter justify-start'>
+        <div className='flex flex-col items-center justify-center'>
             <Image
                 src = "/Profile_Pic.jpg"
                 alt = "Profile-Pic"
