@@ -9,8 +9,11 @@ const RecentProjects = () => {
         ["/BugBuddy-gif.gif","Bug Buddy", "Live Bug Tracking and Documentation App", "Link", "Github"],
         ["/Upwork-gif.gif", "OfficeVibe", "Mobile-responsive front-end interface replicating the OfficeVibe platform", "Link", "Github"],
         ["/Unsplash-gif.gif", "Unsplash", "Mobile-responsive front-end interface replicating the Unsplash platform", "Link", "Github"]
-        ].map(([preview, title, desc, link, github])=>(
-            <div className='flex flex-col border rounded-2xl p-5 border-secondary gap-4 transition hover:-translate-y-1 cursor-pointer'>
+        ].map(([preview, title, desc, link, github],i)=>(
+            <div 
+                className='flex flex-col border rounded-2xl p-5 border-secondary gap-4 transition hover:-translate-y-1 cursor-pointer'
+                key = {i}
+            >
                 <Image
                     src = {preview}
                     alt = {preview}

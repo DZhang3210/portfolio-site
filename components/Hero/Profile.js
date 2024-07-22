@@ -24,12 +24,13 @@ const Profile = () => {
       </div>
       <div className='grid grid-cols-2 md:grid-cols-4 gap-5 justify-center w-full'>
         {
-        [[<Mail/>, "Email", "mailto:davidzhang3210@gmail.com"],
-        [<Linkedin/>,"LinkedIn",'https://www.linkedin.com/in/david-zhang-50b068210/'],
-        [<Github/>, "Github",'https://github.com/DZhang3210'],
-        [<File/>,"Cover Letter", "Documents/CV.pdf"]].map(([icon, title, href]) => (
+        [[<Mail key = "index1"/>, "Email", "mailto:davidzhang3210@gmail.com"],
+        [<Linkedin key = "index2"/>,"LinkedIn",'https://www.linkedin.com/in/david-zhang-50b068210/'],
+        [<Github key = "index3"/>, "Github",'https://github.com/DZhang3210'],
+        [<File key = "index4"/>,"Cover Letter", "Documents/CV.pdf"]].map(([icon, title, href],i) => (
             <a 
                 className='flex gap-2 justify-center border rounded-lg py-8 px-5 text-xl transition hover:bg-blue-900 hover:text-white cursor-pointer border-primary items-center'
+                key = {i}
                 href = {href}
                 target="_blank"
             >
