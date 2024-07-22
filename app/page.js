@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="px-20 mt-40 flex flex-col gap-32">
+    <main className="px-5 sm:px-20 mt-40 flex flex-col gap-32">
       <Hero/>
       <Profile/>
       <Certificates/>
