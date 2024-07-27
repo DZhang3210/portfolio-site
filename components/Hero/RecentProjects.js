@@ -6,7 +6,8 @@ const RecentProjects = () => {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-4'>
         {[["/pathfinder_demo.gif","Pathfinding Visualizer", "App to Demonstrate Live Pathfinding Algorithms", "http://pathvis.s3-website-us-east-1.amazonaws.com", "https://github.com/DZhang3210/Pathfinder"],
-        ["/BugBuddy-gif.gif","Bug Buddy", "Live Bug Tracking and Documentation App", "https://bug-frontend-hnc8.onrender.com", "https://github.com/DZhang3210/Bug-Buddy"],
+        // ["/BugBuddy-gif.gif","Bug Buddy", "Live Bug Tracking and Documentation App", "https://bug-frontend-hnc8.onrender.com", "https://github.com/DZhang3210/Bug-Buddy"],
+        ['/MagicPrompt-Gif.gif', 'MagicPrompt', 'Create, Like, Filter, and Share all your favorite AI Prompts to a likeminded community', 'https://project-promptopia.netlify.app/','https://github.com/DZhang3210/project_promptopia'],
         ["/Upwork-gif.gif", "OfficeVibe", "Mobile-responsive front-end interface replicating the OfficeVibe platform", "https://workvibe.netlify.app/", "https://github.com/DZhang3210/work-vibe"],
         ["/Unsplash-gif.gif", "Unsplash", "Mobile-responsive front-end interface replicating the Unsplash platform", "https://unsplash-replica1.netlify.app/", "https://github.com/DZhang3210/unsplash"]
         ].map(([preview, title, desc, link, github],i)=>(

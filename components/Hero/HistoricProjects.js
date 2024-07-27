@@ -10,6 +10,12 @@ const HistoricProjects = () => {
       <div className='flex flex-col gap-5'>
         {
             [
+            ["Bug Buddy", "Dec 2023","Jan 2024", [
+                "Live Bug Tracking and Documentation App",
+                'Created a dynamic bug tracking interface where users can create, edit, delete, resolve, and comment on bug reports in real-time.',
+                'Built robust user authentication and authorization for secure platform access',
+                'Constructed dynamic filtering options, to search based on keywords, categories, or custom filters'
+            ]],
             ["Chat App Website", "Dec 2021", "Dec-2021", 
             ["Chatting Platform with encryption, login, chat, saved Channels, emote support", "Utilized React and Stream", "Engineered seamless communication between multiple user and admin support"]],
             ["Payload Tracking","Sep 2021", "Jan 2023", ["Implemented 6 Dof Scanner with Kalman Filter to detect payload dropoff","Preparation to work on NASA competition operations with official team in future"] ],
