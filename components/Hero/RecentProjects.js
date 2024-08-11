@@ -1,6 +1,7 @@
 import { Github, Link } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import TagList from "../TagList";
 
 const RecentProjects = () => {
   return (
@@ -12,6 +13,18 @@ const RecentProjects = () => {
           "Mobile-responsive eCommerce marketiplace utilizing postgresql and authenticated Users + Payment",
           "https://prisma-deploy-kohl.vercel.app/",
           "https://github.com/DZhang3210/prisma-deploy",
+          [
+            "NextJS",
+            "React",
+            "Prisma",
+            "Zod",
+            "Typescript",
+            "Tailwind",
+            "Next-Auth",
+            "Stripe",
+            "Resend",
+            "Postgresql",
+          ],
         ],
 
         [
@@ -20,6 +33,7 @@ const RecentProjects = () => {
           "Create, Like, Filter, and Share all your favorite AI Prompts to a likeminded community",
           "https://project-promptopia.netlify.app/",
           "https://github.com/DZhang3210/project_promptopia",
+          ["NextJS", "React", "MongoDB", "Next-Auth", "Tailwind"],
         ],
         [
           "/Upwork-gif.gif",
@@ -27,6 +41,7 @@ const RecentProjects = () => {
           "Mobile-responsive front-end interface replicating the OfficeVibe platform",
           "https://workvibe.netlify.app/",
           "https://github.com/DZhang3210/work-vibe",
+          ["NextJS", "React", "Tailwind", "Framer-Motion"],
         ],
         [
           "/Unsplash-gif.gif",
@@ -34,8 +49,9 @@ const RecentProjects = () => {
           "Mobile-responsive front-end interface replicating the Unsplash platform",
           "https://unsplash-replica1.netlify.app/",
           "https://github.com/DZhang3210/unsplash",
+          ["NextJS", "React", "Tailwind", "Framer-Motion"],
         ],
-      ].map(([preview, title, desc, link, github], i) => (
+      ].map(([preview, title, desc, link, github, tags], i) => (
         <div
           className="flex flex-col border rounded-2xl p-5 border-secondary gap-4 transition hover:-translate-y-1 cursor-pointer"
           key={i}
@@ -49,6 +65,7 @@ const RecentProjects = () => {
           />
           <div>
             <div className="text-xl font-semibold">{title}</div>
+            <TagList tags={tags} />
             <p>{desc}</p>
           </div>
           <div className="flex pr-5 gap-2 text-white">
