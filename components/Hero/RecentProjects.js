@@ -35,13 +35,6 @@ const RecentProjects = () => {
           "https://unsplash-replica1.netlify.app/",
           "https://github.com/DZhang3210/unsplash",
         ],
-        [
-          "/pathfinder_demo.gif",
-          "Pathfinding Visualizer",
-          "App to Demonstrate Live Pathfinding Algorithms",
-          "http://pathvis.s3-website-us-east-1.amazonaws.com",
-          "https://github.com/DZhang3210/Pathfinder",
-        ],
       ].map(([preview, title, desc, link, github], i) => (
         <div
           className="flex flex-col border rounded-2xl p-5 border-secondary gap-4 transition hover:-translate-y-1 cursor-pointer"
