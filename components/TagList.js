@@ -10,7 +10,7 @@ const TagList = ({ tags }) => {
         <Badge
           key={i}
           variant={""}
-          className="inline-flex items-center px-5 py-1 xl:text-sm bg-gray-800 text-white my-1"
+          className="inline-flex items-center px-5 py-1 text-[0.5rem] bg-gray-800 text-white my-1"
         >
           <span>{tag}</span>
         </Badge>
