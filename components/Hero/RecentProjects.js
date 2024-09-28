@@ -13,18 +13,7 @@ const RecentProjects = () => {
           "Mobile-responsive eCommerce marketiplace utilizing postgresql and authenticated Users + Payment",
           "https://prisma-deploy-kohl.vercel.app/",
           "https://github.com/DZhang3210/prisma-deploy",
-          [
-            "NextJS",
-            "React",
-            "Prisma",
-            "Zod",
-            "Typescript",
-            "Tailwind",
-            "Next-Auth",
-            "Stripe",
-            "Resend",
-            "Postgresql",
-          ],
+          ["NextJS", "Prisma", "Zod", "Typescript", "Stripe", "Resend"],
         ],
 
         [
