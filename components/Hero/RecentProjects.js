@@ -8,6 +8,22 @@ const RecentProjects = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-4">
       {[
         [
+          "/reddit.gif",
+          "Reddit Clone",
+          "Full Stack Reddit Clone",
+          "https://reddit-clone-topaz-beta.vercel.app/",
+          "https://github.com/DZhang3210/reddit-clone",
+          [
+            "NextJS",
+            "Convex",
+            "File Upload",
+            "Rich-Text",
+            "Real-Time",
+            "Social-Media",
+            "Typescript",
+          ],
+        ],
+        [
           "/eCommerce.gif",
           "eCommerce",
           "Mobile-responsive eCommerce marketiplace utilizing postgresql and authenticated Users + Payment",
