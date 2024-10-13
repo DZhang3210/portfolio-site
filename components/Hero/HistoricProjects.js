@@ -8,6 +8,16 @@ const HistoricProjects = () => {
       <div className="flex flex-col gap-5">
         {[
           [
+            "MagicPrompt",
+            "Dec 2024",
+            "Dec 2024",
+            [
+              "Create, Like, Filter, and Share all your favorite AI Prompts to a likeminded community.",
+              "Discover trending AI prompts tailored to your interests through personalized recommendations.",
+              "Collaborate with the community by remixing and enhancing existing prompts to unlock new creative possibilities.",
+            ],
+          ],
+          [
             "Pathfinding Visualizer",
             "Dec 2023",
             "Dec 2023",

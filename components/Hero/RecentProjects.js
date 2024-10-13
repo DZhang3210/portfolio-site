@@ -33,14 +33,6 @@ const RecentProjects = () => {
         ],
 
         [
-          "/MagicPrompt-Gif.gif",
-          "MagicPrompt",
-          "Create, Like, Filter, and Share all your favorite AI Prompts to a likeminded community",
-          "https://project-promptopia.netlify.app/",
-          "https://github.com/DZhang3210/project_promptopia",
-          ["NextJS", "React", "MongoDB", "Next-Auth", "Tailwind"],
-        ],
-        [
           "/Upwork-gif.gif",
           "OfficeVibe",
           "Mobile-responsive front-end interface replicating the OfficeVibe platform",
