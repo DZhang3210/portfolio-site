@@ -67,7 +67,7 @@ const RecentProjects = () => {
           </div>
           <div className="flex pr-5 gap-2 text-white">
             <a
-              className="flex gap-1 p-1 bg-[#2C3E50] transition hover:text-blue-400 rounded-lg"
+              className="flex gap-1 p-1 bg-[#2C3E50] transition hover:text-blue-400 rounded-lg items-center"
               href={link}
               target="_blank"
             >
@@ -75,7 +75,7 @@ const RecentProjects = () => {
               Link
             </a>
             <a
-              className="flex gap-2 p-1 bg-[#333333] transition hover:text-blue-400 rounded-lg"
+              className="flex gap-2 p-1 bg-[#333333] transition hover:text-blue-400 rounded-lg items-center"
               href={github}
               target="_blank"
             >
