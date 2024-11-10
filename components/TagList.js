@@ -1,6 +1,5 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
-import { X } from "lucide-react";
 import React from "react";
 
 const TagList = ({ tags }) => {
@@ -9,8 +8,8 @@ const TagList = ({ tags }) => {
       {tags.map((tag, i) => (
         <Badge
           key={i}
-          variant={""}
-          className="inline-flex items-center px-1 py-1 text-[0.4rem] bg-gray-800 text-white my-1"
+          variant={"outline"}
+          className="inline-flex items-center px-4 py-1 my-1 text-xs border border-gray-400 text-gray-500 bg-white rounded-md"
         >
           <span>{tag}</span>
         </Badge>

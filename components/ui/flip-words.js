@@ -3,11 +3,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
 import { cn } from "@/lib/utils.js";
 
-export const FlipWords = ({
-  words,
-  duration = 3000,
-  className,
-}) => {
+export const FlipWords = ({ words, duration = 3000, className }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -34,7 +30,7 @@ export const FlipWords = ({
       <motion.div
         initial={{
           opacity: 0,
-          y: 10,
+          y: 5,
         }}
         animate={{
           opacity: 1,
@@ -47,7 +43,7 @@ export const FlipWords = ({
         }}
         exit={{
           opacity: 0,
-          scale: 2,
+          scale: 1.2,
           position: "absolute",
         }}
         className={cn(
@@ -65,7 +61,7 @@ export const FlipWords = ({
               delay: index * 0.1,
               duration: 0.4,
             }}
-            className="inline-block text-black"
+            className="inline-block text-main"
           >
             {letter}
           </motion.span>
