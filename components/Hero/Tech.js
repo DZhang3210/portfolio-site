@@ -10,7 +10,7 @@ const TechPage = () => {
       <h1 className="text-5xl font-semibold text-gray-600">Technologies</h1>
       <hr />
       <p className="text-base text-gray-500 indent-2">
-        I'm proficient in a range of modern technologies that empower me to
+        I&apos;m proficient in a range of modern technologies that empower me to
         build highly functional solutions. These are some of my main
         technologies.
       </p>
