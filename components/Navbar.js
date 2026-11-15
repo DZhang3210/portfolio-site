@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="text-2xl text-main">David Zhang</div>
       <div className="flex gap-4 items-center">
         <Link
-          href="https://www.linkedin.com/in/david-zhang-50b068210/"
+          href="https://www.linkedin.com/in/techdavidzhang1/"
           target="_blank"
         >
           <button className="border-2 border-gray-500 hover:bg-main hover:border-transparent hover:text-white transition rounded-lg p-2">
