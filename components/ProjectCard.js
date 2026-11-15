@@ -45,7 +45,7 @@ const ProjectCard = ({ media, title, desc, tags, site, code, badge, index = 0, .
         {media}
 
         {primary && (
-          <div className="absolute inset-0 z-20 flex items-center justify-center gap-3 bg-slate-950/55 backdrop-blur-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none">
+          <div className="absolute inset-0 z-20 flex [@media(hover:none)]:hidden items-center justify-center gap-3 bg-slate-950/55 backdrop-blur-sm opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none">
             {site && (
               <a
                 href={site}
@@ -74,10 +74,10 @@ const ProjectCard = ({ media, title, desc, tags, site, code, badge, index = 0, .
       </div>
 
       <div className="flex flex-col gap-2">
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
           <div className="text-2xl font-semibold">{title}</div>
           {badge && (
-            <span className="text-xs font-medium uppercase tracking-wider text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-2 py-0.5">
+            <span className="whitespace-nowrap text-xs font-medium uppercase tracking-wider text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-2 py-0.5">
               {badge}
             </span>
           )}

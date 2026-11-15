@@ -4,11 +4,11 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav
-      className="fixed top-0 left-0 right-0 shadow-md flex justify-between px-10 h-[5rem] items-center text-2xl bg-white z-[100]"
+      className="fixed top-0 left-0 right-0 shadow-md flex justify-between px-4 sm:px-10 h-[5rem] items-center text-2xl bg-white z-[100]"
       id="navbar"
     >
-      <div className="text-2xl text-main">David Zhang</div>
-      <div className="flex gap-4 items-center">
+      <div className="text-xl sm:text-2xl text-main whitespace-nowrap">David Zhang</div>
+      <div className="flex gap-2 sm:gap-4 items-center">
         <Link
           href="https://www.linkedin.com/in/techdavidzhang1/"
           target="_blank"

@@ -91,7 +91,12 @@ const RecentProjects = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/80 to-white" />
         <button
           type="button"
-          onClick={() => setExpanded(true)}
+          onClick={() => {
+            setExpanded(true);
+            // Release the height clamp once the expand animation is done,
+            // even if the browser never fires transitionend.
+            setTimeout(() => setOpened(true), 800);
+          }}
           tabIndex={collapsed ? 0 : -1}
           className="relative flex items-center gap-1.5 px-5 py-2 rounded-full bg-white border border-slate-300 text-gray-700 font-medium shadow-sm hover:border-blue-900/40 hover:shadow-[0_6px_20px_-4px_rgba(30,58,138,0.45)] transition duration-300"
         >
