@@ -9,7 +9,7 @@ const overlayButton =
   "flex items-center gap-2 px-4 py-2 rounded-full text-base font-semibold transition-transform duration-300 translate-y-2 group-hover:translate-y-0 group-focus-within:translate-y-0 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto";
 
 /**
- * Card shared by My Portfolio and Machine Learning.
+ * Card shared by the Full Stack and Machine Learning sections.
  * `media` is what sits at the top (a screenshot, or a result panel).
  * Clicking the card opens `site` (or `code` if there is no site);
  * hovering shows buttons for both.
