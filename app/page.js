@@ -12,8 +12,8 @@ export default function Home() {
       id="home"
     >
       <Hero />
-      <Profile />
       <MachineLearning />
+      <Profile />
       <TechPage />
       {/* <Certificates /> */}
       {/* <HistoricProjects /> */}
