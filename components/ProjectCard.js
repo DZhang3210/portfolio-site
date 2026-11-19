@@ -12,9 +12,9 @@ const overlayButton =
  * Card shared by the Full Stack and Machine Learning sections.
  * `media` is what sits at the top (a screenshot, or a result panel).
  * Clicking the card opens `site` (or `code` if there is no site);
- * hovering shows buttons for both.
+ * hovering shows buttons for both. `siteLabel` renames the site button (e.g. "Read write-up").
  */
-const ProjectCard = ({ media, title, desc, tags, site, code, badge, index = 0, ...rest }) => {
+const ProjectCard = ({ media, title, desc, tags, site, siteLabel = "Visit site", code, badge, index = 0, ...rest }) => {
   const primary = site ?? code;
 
   return (
@@ -36,7 +36,7 @@ const ProjectCard = ({ media, title, desc, tags, site, code, badge, index = 0, .
           href={primary}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`${title} – ${site ? "live site" : "source code"}`}
+          aria-label={`${title} – ${site ? siteLabel : "source code"}`}
           className="absolute inset-0 z-10 rounded-2xl focus:outline-none"
         />
       )}
@@ -54,7 +54,7 @@ const ProjectCard = ({ media, title, desc, tags, site, code, badge, index = 0, .
                 tabIndex={-1}
                 className={`${overlayButton} bg-white text-slate-900 hover:bg-blue-50`}
               >
-                Visit site
+                {siteLabel}
                 <ArrowUpRight className="w-5 h-5" />
               </a>
             )}
@@ -89,7 +89,7 @@ const ProjectCard = ({ media, title, desc, tags, site, code, badge, index = 0, .
           <div className="hidden [@media(hover:none)]:flex relative z-20 gap-5 text-sm font-semibold text-blue-900">
             {site && (
               <a href={site} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
-                Visit site <ArrowUpRight className="w-4 h-4" />
+                {siteLabel} <ArrowUpRight className="w-4 h-4" />
               </a>
             )}
             {code && (
