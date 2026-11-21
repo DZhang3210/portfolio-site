@@ -14,7 +14,7 @@ const overlayButton =
  * Clicking the card opens `site` (or `code` if there is no site);
  * hovering shows buttons for both. `siteLabel` renames the site button (e.g. "Read write-up").
  */
-const ProjectCard = ({ media, title, desc, tags, site, siteLabel = "Visit site", code, badge, index = 0, ...rest }) => {
+const ProjectCard = ({ media, title, desc, tags, site, siteLabel = "Visit site", code, badge, label, index = 0, ...rest }) => {
   const primary = site ?? code;
 
   return (
@@ -79,6 +79,11 @@ const ProjectCard = ({ media, title, desc, tags, site, siteLabel = "Visit site",
           {badge && (
             <span className="whitespace-nowrap text-xs font-medium uppercase tracking-wider text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-2 py-0.5">
               {badge}
+            </span>
+          )}
+          {label && (
+            <span className="whitespace-nowrap text-xs font-medium uppercase tracking-wider text-blue-900 bg-blue-50 border border-blue-200 rounded-full px-2 py-0.5">
+              {label}
             </span>
           )}
         </div>
